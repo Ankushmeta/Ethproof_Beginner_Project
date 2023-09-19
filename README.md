@@ -16,10 +16,10 @@ The second line pragma solidity 0.8.18; specifies the version of the Solidity pr
 
 This section defines the main body of the smart contract, which is named TokenContract. It begins with the keyword contract, followed by the contract's name. Within this contract definition, the following state variables are declared:
 
-tokenName: A string representing the name of the token. It is marked as public, which means it can be read by anyone.
-tokenSymbol: A string representing the symbol or ticker of the token, like "ETH" for Ether. Also marked as public.
-totalSupply: An unsigned integer (uint256) representing the total supply of the token. It is initialized to 0 and is also marked as public.
-balances: This is a mapping that associates Ethereum addresses (represented by address) with their corresponding token balances (represented by uint256). It is used to keep track of how many tokens each address holds.
+**tokenName:** A string representing the name of the token. It is marked as public, which means it can be read by anyone.
+**tokenSymbol:** A string representing the symbol or ticker of the token, like "ETH" for Ether. Also marked as public.
+**totalSupply:** An unsigned integer (uint256) representing the total supply of the token. It is initialized to 0 and is also marked as public.
+**balances:** This is a mapping that associates Ethereum addresses (represented by address) with their corresponding token balances (represented by uint256). It is used to keep track of how many tokens each address holds.
 
 These are two functions defined within the TokenContract. The first function, mint, is used to create and distribute new tokens. It takes two parameters: _to, which represents the recipient's Ethereum address, and _value, which represents the number of tokens to be created and sent. Inside the mint function, the total supply is increased by the specified _value, and the balance of the recipient's address is increased by the same amount.
 
